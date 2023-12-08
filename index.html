@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel ="stylesheet" href="styles.css">
+    <script src ="fitChallenge.js" defer></script>
+    <script src ="Calendar.js" defer></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@fullcalendar/core@4.2.0/main.min.css'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@4.3.0/main.min.css'>
+  </head>
+<body>
+  <header><nav class="navbar navbar-expand-xxxl navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#" style="font-size: 28px;">Uplift Fitness</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+    aria-controls="navbarNavDropdown" 
+    aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html" style="font-size: 18px;">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="font-size: 18px;" href="ValidationForm.html">Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"style="font-size: 18px;" href="#trainer" data-toggle="collapse" data-target=".navbar-collapse.show">Meet Our Trainers</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="section__container header__container" id="home">
+    <div class="header__image">
+      <img src="Gallery\Home_header_athlete.png" alt="header">
+    </div>
+    <div class ="header_content">
+      <h4>Shape Your Strength,</h4>
+      <h1 class ="section_header">Build Your Best Self!</h1>
+      <p>
+        It's a commitment to sculpting not only your physique 
+        but also fostering personal growth and unleashing your 
+        full potential. Join us in crafting a stronger, more resilient
+         version of yourself through dedicated workouts, expert guidance,
+         and a community that champions your every milestone
+      </p>
+      <button type="button" class="btn btn-primary btn-custom" onclick="window.location.href='#price'">Sign Up</button>
+    </div>
+</header>
+  <section class="section__container about__container" id="about">
+    <div class="about__image">
+      <img src="Gallery\section2_aboutUs.png" alt ="about"/>
+    </div>
+    <div class="about_content header_content">
+      <h4 class="section_header">Our Story</h4>
+      <p class ="section_description">
+        Uplift Fitness emerged from a shared passion for personal transformation and well-being. 
+        The name reflects our commitment to uplifting lives through fitness. 
+        We believe in fostering a positive community where individuals are inspired to surpass 
+        their limits and achieve holistic well-being.
+        Uplift Fitness is not just a place to work out; it's a destination for positive change, growth, 
+        and a healthier, happier lifestyle.
+        Join us in this empowering journey towards a better you.
+      </p>
+    </div>
+  
+      <div class = "about__grid">
+        <div class="aboutIDcard">
+          <span><i class="ri-edit-box-fill"></i></span>
+          <div>
+            <h4>Personalized Fitness Plans:</h4>
+            <p>Tailored Workout Routines: Enjoy personalized plans for weight loss, muscle gain, or overall well-being.
+              Individualized Guidance: Benefit from one-on-one consultations with experienced trainers for optimal results.
+              Progress Tracking: Access a digital platform to monitor your journey, receive feedback, and make data-driven adjustments to your fitness plan.</p>
+          </div>
+        </div>
+        <div class="aboutIDcard">
+          <span><i class="ri-magic-fill"></i></span>
+          <div>
+          <h4>Exclusive Access to Premium Classes:</h4>
+          <p>Unlock a range of high-quality fitness sessions, from dynamic
+             HIIT workouts to serene yoga and more. Benefit from priority booking to secure your spot in popular classes, 
+             ensuring you never miss a session. Our experienced and certified instructors infuse enthusiasm 
+            and expertise into each class, making every workout enjoyable and effective.</p>
+          </div>
+          </div>
+          <div class="aboutIDcard">
+            <span><i class="ri-user-heart-fill"></i></span>
+            <div>
+            <h4>Wellness Hub and Resources:</h4>
+            <p>Get nutritional guidance and meal planning resources to complement your 
+              fitness routine. Join workshops covering stress management, sleep optimization, 
+              and mindfulness for holistic well-being. Connect with a supportive online community to share tips, 
+              progress, and encouragement,
+               fostering belonging and motivation.</p>
+            </div>
+            </div>
+      </div>
+    </section>
+    <section class="section__container class__container" id="class">
+      <h2 class ="section_header">Our Personalized Training Difference</h2>
+      <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <div class="class_grid">
+              <div class="class_card">
+                  <img src="Gallery\PhotoCard1.jpg" alt="bg" class="class"/>
+                  <div class="class_content">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Expert Guidance 
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>Work one-on-one with a personal trainer</strong>
+              
+                        <strong>Your trainer will design a customized workout and nutrition plan tailored to your:</strong>
+                        
+                        <ul>  
+                          <li>Fitness level</li>
+                          <li>Health goals</li>   
+                          <li>Unique needs</li>
+                        </ul>            </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                
+                  <div class="class_card">
+                    <img src="Gallery\PhotoCard2.png" alt="class">
+                    <div class="class_content">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Fit Your Unique Lifestyle        
+                      </button>
+                        </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>No more struggling to make rigid gym classes work with your schedule. Our personalized training means you can work out on your own time, in your own space, and design customized programs that fit your exact needs and abilities.</strong>
+          
+                        <strong>Want to exercise first thing in the morning? Only have access to minimal equipment? Have a packed work week with unpredictable hours? No problem - your custom program is tailored to overcome these barriers so that you can realistically stick to it.</strong> 
+                    
+                        <strong>We'll meet you where it works for you, not the other way around. Fitness that finally fits your real life.</strong>
+                     </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="class_card">
+                  <img src="Gallery\PhotoCard3.jpg" alt="class">
+                  <div class="class_content">
+                    <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Progress Tracking & Accountability
+                   </button>
+                 </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>We utilize mobile apps, fitness devices, and check-ins to help objectively track every part of your fitness journey.</strong>
+                    <strong>With real-time feedback and tracking, you'll stay accountable while also feeling motivated watching your performance improve week-to-week against your set milestones.</strong>            </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div> 
+        </div> 
+      </section>
+    </section>
+    <section class="section__container trainer_container" id="trainer">
+      <h2 class="section_header">Meet Our Trainers</h2>
+      <p class="section_description">
+        At Uplift Fitness, we take pride in offering diverse and specialized training 
+        programs led by our team of dedicated and experienced trainers. Each trainer bring
+        s a unique set of skills, qualifications, and personal stories
+         that contribute to the rich tapestry of our fitness community.
+      </p>
+      <div class="trainer_grid">
+        <div class="trainer_card">
+          <img src="Gallery\Trainer1.jpg" alt="trainer">
+        </div>
+        <div class="trainer_card">
+          <div class="trainer_content">
+            <h4>Trisha</h4>
+                <h5><em>Specialization: High-Energy Group Training, Nutrition Coaching
+
+                </em></h5>
+                <hr>
+                <p>
+                  Energetic, motivational, and committed to your success,
+                   Trisha is the heartbeat of our group
+                    training sessions. Her vibrant energy and passion
+                     for fitness create an atmosphere where every member
+                      feels motivated and empowered. As a certified nutrition coach,
+                       she not only guides you through invigorating workouts but also
+                        provides valuable insights into fueling your body for optimal 
+                        performance.
+                </p>
+            <div class="trainer_social">
+              <a href="#"><i class="ri-facebook-line"></i></a>              
+              <a href="#"><i class="ri-google-line"></i></a>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+              <a href="#"><i class="ri-twitter-line"></i></a>
+            </div>
+          </div>
+          </div>
+          <div class="trainer_card">
+            <img src="Gallery\Trainer2.jpg" alt="trainer" id="trainer">
+          </div>
+          <div class="trainer_card">
+            <div class="trainer_content">
+              <h4>Ava</h4>
+            <h5><em>Flexibility Training, Physical Therapy</em></h5>
+            <hr>
+            <p>
+              Ava is not just a fitness instructor; she is a
+               former dancer and ballerina with a passion for enhancing 
+               flexibility and promoting overall well-being. With a background 
+               in physical therapy, Ava seamlessly blends her love
+                for movement with a deep understanding of the body. Her training sessions are not just workouts; they're experiences 
+              that combine the grace of dance with the precision of therapeutic exercises. Join her to discover a new level of flexibility and strength while enjoying the artistry of movement.
+            </p>
+
+
+              <div class="trainer_social">
+                <a href="#"><i class="ri-facebook-line"></i></a>              
+                <a href="#"><i class="ri-google-line"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-twitter-line"></i></a>
+              </div>
+            </div>
+            </div>
+            <div class="trainer_card">
+              <img src="Gallery\Trainer3.png" alt="trainer">
+            </div>
+            <div class="trainer_card">
+              <div class="trainer_content">
+                
+
+                <h4>Chris</h4>
+                <h5><em>Specialization: Military-Style Intense Workouts, Holistic Wellness</em></h5>
+                <hr>
+                <p>
+                  Meet Trisha, a seasoned veteran who brings discipline, 
+                  intensity, and a holistic approach to fitness. Having served in the military, Trisha
+                  understands the importance of pushing limits while maintaining a balance in overall well-being.
+                   His workouts are designed to challenge both the body and mind, providing a full-body transformation.
+                    Whether you're a fitness enthusiast or just starting your journey, Trisha will guide you with unwavering dedication,
+                     ensuring you achieve your goals while fostering a sense of camaraderie and mental resilience.
+                </p>
+  
+
+
+
+
+                <div class="trainer_social">
+                  <a href="#"><i class="ri-facebook-line"></i></a>              
+                  <a href="#"><i class="ri-google-line"></i></a>
+                  <a href="#"><i class="ri-instagram-line"></i></a>
+                  <a href="#"><i class="ri-twitter-line"></i></a>
+                </div>
+              </div>
+              </div>
+        </div>
+    </section>
+    <section class="section__container pice_container" id="price">
+      <h2 class="section_header">Our Pricing</h2>
+      <p class="section_description">
+        Discover the perfect membership tier tailored to your fitness goals. At Uplift Fitness, 
+        we offer three distinct membership levels to accommodate every 
+        lifestyle and commitment level.
+      </p>
+      <div class="price_grid">
+        <div class="price_card">
+          <div class="price_content">
+            <h4>Fit Starter</h4>
+            <img src="Gallery\PricingImg1.png" alt="Price">
+            <p>
+              Embark on your fitness adventure with our Fit Starter membership. This tier is ideal 
+              for those seeking a foundational fitness experience.
+            </p>
+            <hr />
+            <h4>Key Features</h4>
+            <p><strong>Access to Basic Gym Facilities:</strong>Unlimited use of our well-equipped gym floor with state-of-the-art cardio and strength training equipment.</p>
+            <p>Group Fitness Classes: Engage in invigorating group fitness classes led by certified trainers, fostering a sense of community and motivation.</p>
+          </div>
+          <button type="button" class="btn btn-primary btn-custom"onclick="window.location.href='ValidationForm.html'">Join Us</button>        </div>
+        <div class="price_card">
+          <div class="price_content">
+            <h4>Fit Plus</h4>
+            <img src="Gallery\PricingImg2.png" alt="Price">
+            <p>
+              Take your fitness commitment to the next level with our Fit Plus
+               membership. This tier is tailored for individuals ready to explore specialized 
+              classes and personalized guidance.
+            </p>
+            <hr />
+            <h4>Key Features</h4>
+            <p><strong>Specialized Classes:</strong> Dive deeper into your fitness journey with access to classes such as yoga and HIIT.</p>
+            <p>Personalized Fitness Assessment: Receive a one-on-one fitness assessment and goal-setting session with our experienced trainers.</p>
+          </div>
+          <button type="button" class="btn btn-primary btn-custom"onclick="window.location.href='ValidationForm.html'">Join Us</button>        </div>
+        <div class="price_card">
+          <div class="price_content">
+            <h4>Fit Pro</h4>
+            <img src="Gallery\PricingImg3.png" alt="Price">
+            <p>
+              For those seeking an elite fitness experience, our Fit Pro membership provides an unparalleled level of access and personalized attention.
+            </p>
+            <hr />
+            <h4>Key Features</h4>
+            <p><strong>Unlimited Personal Training Sessions:</strong>Enjoy exclusive access to unlimited one-on-one personal training sessions with our expert trainers.</p>
+            <p>Exclusive Gym Access: Benefit from priority access to designated workout zones and amenities for the ultimate gym experience.
+              Feel free to customize the pricing details and values (represented by $X, $Y, $Z) based on your actual pricing structure. This content provides a brief overview of each membership tier before diving into key features, allowing potential members to quickly understand the value each tier offers.
+              </p>
+          </div>
+          <button type="button" class="btn btn-primary btn-custom"onclick="window.location.href='ValidationForm.html'">Join Us</button>
+        </div>
+      </div>
+    </section>
+    
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+ 
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+   
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+  
+    <div>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+   
+  </section>
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Uplift Fitness
+          </h6>
+          <p>
+           Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+ 
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            USEFUL LINKS
+          </h6>
+          <p>
+            <a href="#about" class="text-reset">Our Story</a>
+          </p>
+          <p>
+            <a href="#class" class="text-reset">Personalized Fitness Plan</a>
+          </p>
+          <p>
+            <a href="validationForm.html" class="text-reset">Sign up</a>
+          </p>
+          <p>
+            <a href="#trainer" class="text-reset">Meet our Trainers</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            NONWORKING links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Unus</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">duo</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">tres</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">quattuor</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+       
+      </div>
+      
+    </div>
+  </section>
+
+
+ 
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">UpliftFitness.com</a>
+  </div>
+  
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="main_effects.js" defer></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
